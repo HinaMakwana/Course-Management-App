@@ -1,9 +1,10 @@
-
+const { urlencoded } = require('body-parser');
 let bodyParser = require('body-parser');
 
 let courseController = require('../controllers/courseController');
 let router = require('express').Router();
 router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({extended  : false}))
 
 router.get('/',(req,res)=>{
     res.send("home page");

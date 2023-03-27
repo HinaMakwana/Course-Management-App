@@ -3,7 +3,7 @@ let express = require('express');
 const app = express();
 
 const port = 8080;
-let router = require('./Course-management-App/routes/route');
+let router = require('./routes/route');
 app.use(router);
 
 
